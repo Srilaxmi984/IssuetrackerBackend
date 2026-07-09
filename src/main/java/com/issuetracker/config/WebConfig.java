@@ -15,12 +15,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000","https://issuetracker-frontend-ccop0wpi9-srilaxmi984s-projects.vercel.app/")
+                .allowedOrigins("http://localhost:3000","https://issuetracker-frontend-chi.vercel.app/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
         registry.addMapping("/uploads/**")
-                .allowedOrigins("http://localhost:3000","https://issuetracker-frontend-ccop0wpi9-srilaxmi984s-projects.vercel.app/")
+                .allowedOrigins("http://localhost:3000","https://issuetracker-frontend-chi.vercel.app/")
                 .allowedMethods("GET")
                 .allowedHeaders("*");
     }
